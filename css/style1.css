@@ -39,11 +39,20 @@ body {
   margin-bottom: 5px;
 }
 
+.first-name {
+  font-weight: 300;
+}
+
+.last-name {
+  font-weight: 300;
+}
+
 .contact-info {
   margin-bottom: 20px;
 }
 
-.email, .phone {
+.email,
+.phone {
   color: #999;
   font-weight: 300;
 }
@@ -90,7 +99,8 @@ body {
   margin-bottom: 0;
 }
 
-.left, .right {
+.left,
+.right {
   vertical-align: top;
   display: inline-block;
 }
@@ -140,48 +150,4 @@ label {
 
 input:checked + label {
   background: #79A9CE;
-}
-
-
-
-@media (min-width: 769px) {
-  .container {
-    max-width: 700px;
-  }
-  .left {
-    width: 60%;
-  }
-  .right {
-    text-align: right;
-    width: 39%;
-  }
-  .section__list-item {
-    margin-bottom: 40px;
-  }
-}
-
-
-@media (min-width: 481px) {
-  .container {
-    padding: 20px;
-  }
-  .section__list-item {
-    margin-bottom: 20px;
-  }
-  .section__title {
-    font-size: 20px;
-  }
-}
-
-
-@media (min-width: 321px) {
-  .container {
-    padding: 10px;
-  }
-  .full-name {
-    font-size: 30px;
-  }
-  .section__title {
-    font-size: 18px;
-  }
 }
