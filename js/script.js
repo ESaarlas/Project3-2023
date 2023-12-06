@@ -1,19 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let slideshowIndex = 0;
-  const slides = document.getElementsByClassName("mySlides");
+let slideIndex = 0;
 
-  function showSlides() {
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.opacity = 0;
-    }
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
 
-    slideshowIndex++;
-    if (slideshowIndex > slides.length) {
-      slideshowIndex = 1;
-    }
-
-    slides[slideshowIndex - 1].style.opacity = 1;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
 
-  setInterval(showSlides, 2000);
-});
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+
+  setTimeout(showSlides, 2000); 
+}
+
+showSlides(); 
