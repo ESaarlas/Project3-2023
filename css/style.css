@@ -200,19 +200,6 @@ h1 {
   font-size: 36px;
 }
 
-.nav {
-  text-align: center;
-  padding: 1rem;
-}
-
-.nav ul {
-  overflow: hidden;
-}
-
-.nav li {
-  float: left;
-  margin-right: 20px; 
-}
 
 p {
   font-size: 1rem;
@@ -275,4 +262,29 @@ p {
   .song {
     max-width: 100%;
   }
+}
+
+
+.nav {
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  text-decoration: underline;
 }
