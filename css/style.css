@@ -200,16 +200,16 @@ h1 {
   font-size: 36px;
 }
 
-.navigation {
+.nav {
   text-align: center;
   padding: 1rem;
 }
 
-.navigation ul {
+.nav ul {
   overflow: hidden;
 }
 
-.navigation li {
+.nav li {
   float: left;
   margin-right: 20px; 
 }
