@@ -40,7 +40,6 @@ header {
   margin-bottom: 5px;
 }
 
-
 div.full-name .first-name,
 div.full-name .last-name {
   font-weight: 300;
@@ -149,4 +148,46 @@ label {
 
 input:checked + label {
   background: #79A9CE;
+}
+
+
+
+@media only screen and (min-width: 480px) {
+  
+  .container {
+    padding: 20px;
+  }
+
+  .full-name {
+    font-size: 30px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    text-align: left;
+  }
+
+  .section__list-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  .section__list-item {
+    margin-bottom: 20px;
+  }
 }
