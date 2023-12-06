@@ -1,10 +1,7 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  height: 100%;
 }
-
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
@@ -13,7 +10,23 @@ body {
   padding: 0;
 }
 
-header {
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ADD8E6; 
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+
+
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #ADD8E6;
+  margin: 0;
+  padding: 0;
+}
+
+
   background-color: #FFD580;
   color: #fff;
   text-align: center;
@@ -22,55 +35,34 @@ header {
   font-family: 'Georgia', serif;
 }
 
-
-.container {
-  max-width: 700px;
-  background: #fff;
-  margin: 0 auto;
-  box-shadow: 1px 1px 2px #DAD7D7;
-  border-radius: 3px;
-  padding: 40px;
-  margin-top: 50px;
+h1 {
+  margin: 0;
+  font-size: 36px;
 }
 
-.full-name {
-  font-size: 40px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
+.navigation {
+  text-align: center;
+  padding: 1rem;
 }
 
-div.full-name .first-name,
-div.full-name .last-name {
-  font-weight: 300;
+ul {
+  list-style: none;
 }
 
-.contact-info {
-  margin-bottom: 20px;
+ul li {
+  display: inline;
+  margin-right: 2rem;
 }
 
-
-@media only screen and (min-width: 480px) {
-  .container {
-    padding: 20px;
-  }
-
-  .full-name {
-    font-size: 30px;
-  }
-
-  
+a {
+  text-decoration: none;
+  color: #333;
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
+a:hover {
+  text-decoration: underline;
+}
 
-  .container {
-    max-width: 90%;
-  }
-
- 
 main {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +83,26 @@ main {
   cursor: pointer;
 }
 
+.song:hover {
+  transform: scale(1.05);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  padding: 0 10px;
+  color: #555;
+}
 
 @media (max-width: 768px) {
   main {
