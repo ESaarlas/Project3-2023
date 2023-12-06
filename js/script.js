@@ -1,16 +1,18 @@
 let slideIndex = 0;
 
 function showSlides() {
-  let i;
   const slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = "0";
   }
+
   slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
   }
-  slides[slideIndex - 1].style.display = "block";
+
+  slides[slideIndex].style.opacity = "1";
   setTimeout(showSlides, 2000); 
 }
 
